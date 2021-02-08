@@ -1,11 +1,16 @@
-<html>
-  <head>
-    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-        <!--<a-entity gltf-model="./assets/magnemite/scene.gltf" position="-1 0.5 -3" rotation="0 180 0" scale="1 1 1" animation-mixer/>-->
-        <a-entity gltf-model="./assets/Test/Basketball_Court_embed.gltf" scale="0.01 0.01 0.01/>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<!-- we import arjs version without NFT but with marker + location based support -->
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+    <a-marker preset="hiro">
+        <a-entity
+        position="0 -1 0"
+        scale="0.05 0.05 0.05"
+        gltf-model="./assets/Character_Field/Cha_running.gltf"
+        ></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
     </a-scene>
-  </body>
+</body>
 </html>
