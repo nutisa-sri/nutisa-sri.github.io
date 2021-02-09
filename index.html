@@ -25,7 +25,8 @@
           <a-asset-item id="other" src="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/magnemite/scene.gltf"></a-asset-item>
 
         </a-assets>
-        <a-entity position="0 0 0" particle-system="color: #EF0000,#44CC00"></a-entity>
+        <a-entity light="type: ambient; color: #BBB"></a-entity>
+        <a-entity position="0 0 -10" particle-system="color: #EF0000,#44CC00"></a-entity>
         <a-entity gltf-model="#human" rotation="0 0 0" animation-mixer animation="property: scale; from: 0.01 0.01 0.01; to: 2 2 2; loop: false; dur: 1000"></a-entity>
         <a-entity gltf-model="#other" position="1 1 0" scale = "0.1 0.1 0.1" animation-mixer></a-entity>
       </a-scene>
