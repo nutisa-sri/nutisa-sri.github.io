@@ -32,13 +32,10 @@
 </script>
 
 <body style="margin : 0px; overflow: hidden;">
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <button type="submit" class="close" style="background: url(/assets/btn_close.png); right:30px; width:20%; height:20%;
-      position: absolute;">
-          <span>&times;</span>
-       </button>
-      <img src="/assets/img_test.png" >
-    </div>
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -100%);">
+    <b style="font-size:2vw;">ส่องกับ QR Code</b>
+    <img src="/assets/img_test.png" >
+  </div>
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
       <a-marker markerhandler type='barcode' value='21'>
         <a-entity
