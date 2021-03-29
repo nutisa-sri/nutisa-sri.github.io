@@ -18,6 +18,7 @@
         //model.setAttribute('position', '0 0 -10');
 
         let text = document.querySelector('b');
+        text.removeAttribute('color')
         text.setAttribute('color', 'black')
 
         //scene.appendChild(model);
@@ -30,7 +31,8 @@
         //scene.removeChild(scene.lastChild)
 
         let text = document.querySelector('b');
-        text.setAttribute('color', 'white')
+        text.removeAttribute('color')
+        text.removeAttribute('color', 'white')
 
       })
     }
