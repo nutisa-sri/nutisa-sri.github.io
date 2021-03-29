@@ -3,7 +3,35 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <body style="margin : 0px; overflow: hidden;">
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script> 
+<script>
+  AFRAME.registerComponent('markerhandler', {
+    init: function () {
+
+      this.el.sceneEl.addEventListener('markerFound', () => {
+        // redirect to custom URL e.g. google.com
+        let scene = document.querySelector('a-scene');
+
+        let model = document.createElement('a-entity');
+        model.setAttribute('particle-system', 'color: #EF0000,#44CC00');
+        model.setAttribute('position', '0 0 -10');
+
+        scene.appendChild(model);
+
+      })
+
+      this.el.sceneEl.addEventListener('markerLost', () => {
+        // redirect to custom URL e.g. google.com
+        let scene = document.querySelector('a-scene');
+        scene.removeChild(scene.lastChild)
+
+      })
+    }
+  });
+</script>
+
+<body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker preset="hiro">
         <a-entity
