@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  </head>
+
+  <style>
+    @font-face {
+    font-family: FCEkaluckRegular;
+    src: url(../assets/FCEkaluckRegular.ttf);
+  }
+  </style>
+  <body>
+    <div style="position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%);">
+        <b style="font-size:3vw; font-family: FCEkaluckRegular; color: white;">ส่องกับ QR Code</b>
+        <img src="/assets/img_test.png" >
+      </div>
+    <a-scene>
+        <a-entity
+        position="0 0 -0.5"
+        scale="0.1 0.1 0.1"
+        gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/Cow_gltf/Cow.gltf"
+        animation-mixer
+      ></a-entity>
+      <a-entity
+      position="0 0 0"
+      scale="0.1 0.1 0.1"
+      gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/Cow_gltf/basket.gltf"
+      animation-mixer
+    ></a-entity>
+    <a-entity
+      position="0 0 0"
+      scale="0.5 0.5 0.5"
+      gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/Cow_gltf/plane.gltf"
+      animation-mixer
+    ></a-entity>
+    <a-entity
+      position="0 0 0"
+      scale="5 5 5"
+      gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/Cow_gltf/text2xxx.gltf"
+      animation-mixer
+    ></a-entity>
+    </a-scene>
+  </body>
+</html>
