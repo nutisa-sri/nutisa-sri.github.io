@@ -40,7 +40,7 @@
   <div style="position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%);">
     <b style="font-size:4vw; font-family: FCEkaluckRegular; color: white;">ส่องกับ QR Code</b>
   </div>
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+    <a-scene renderer="colorManagement: true;" embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
       <a-marker markerhandler type='barcode' value='21'>
         <a-entity
           position="-0.75 0 1"
@@ -50,14 +50,14 @@
         ></a-entity>
       <a-entity
         position="0 -0.1 0"
-        scale="0.1 0.1 0.1"
+        scale="0.125 0.125 0.125"
         gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift/All_element.gltf"
         animation-mixer
       ></a-entity>
       <a-entity
         position="0 2 0"
         rotation = "0 270 0"
-        scale="0.075 0.075 0.075"
+        scale="0.06 0.06 0.06"
         gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift/All_text.gltf"
         animation-mixer
       ></a-entity>
