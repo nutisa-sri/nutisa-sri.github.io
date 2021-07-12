@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <meta charset="UTF-8">
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -33,7 +34,7 @@
 <style>
   @font-face {
   font-family: FCEkaluckRegular;
-  src: url(../assets/FCEkaluckRegular.ttf);
+  src: url(./assets/FCEkaluckRegular.ttf);
 }
 </style>
 <body style="margin : 0px; overflow: hidden;">
@@ -46,7 +47,7 @@
           position="-1 0 0"
           rotation = "0 45 0"
           scale="0.15 0.15 0.15"
-          gltf-model="./assets/NY_Gift/Cow02.gltf"
+          gltf-model="./assets/test_cowobj/test_cowobj.obj"
           animation-mixer
         ></a-entity>
       <!--<a-entity
