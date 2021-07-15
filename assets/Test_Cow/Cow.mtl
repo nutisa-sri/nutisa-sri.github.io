@@ -1,0 +1,40 @@
+newmtl pSphere3SG
+illum 4
+Kd 0.16 0.83 0.61
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.15 0.09
+Ns 4.31
+newmtl pSphere3SG1
+illum 4
+Kd 0.31 0.04 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 4.31
+newmtl pSphere3SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Cow_texture_edit.jpg
+Ni 1.00
+newmtl pSphere3SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 4.31
+newmtl pSphere3SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd logo_shirtblack.jpg
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 4.31
