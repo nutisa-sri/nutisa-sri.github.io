@@ -1,0 +1,22 @@
+{
+	"language": "th",
+	"items": 
+	[
+		{
+			"key": "btn_next",
+			"value": "ถัดไป"
+		},
+		{
+			"key": "btn_back",
+			"value": "กลับ"
+		},
+		{
+			"key": "btn_home",
+			"value": "กลับ"
+		},
+		{
+			"key": "btn_end",
+			"value": "จบเกม"
+		}
+	]
+}

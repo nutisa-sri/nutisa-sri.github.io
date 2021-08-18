@@ -1,0 +1,23 @@
+{
+	"language": "en",
+	"items": 
+	[
+		{
+			"key": "btn_next",
+			"value": "Next"
+		},
+		{
+			"key": "btn_back",
+			"value": "Back"
+		},
+		{
+			"key": "btn_home",
+			"value": "Home"
+		},
+		{
+			"key": "btn_end",
+			"value": "End"
+		}
+
+	]
+}
