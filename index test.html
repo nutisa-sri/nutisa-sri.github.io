@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://github.com/mrdoob/three.js/blob/master/examples/js/libs/inflate.min.js"></script>
+  </head>
+
+  <style>
+    @font-face {
+    font-family: FCEkaluckRegular;
+    src: url(./assets/FCEkaluckRegular.ttf);
+  }
+  </style>
+  <body>
+    <div style="position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%);">
+        <b style="font-size:3vw; font-family: FCEkaluckRegular; color: black;">ส่องกับ QR Code</b>
+        <img src="/assets/img_test.png" >
+      </div>
+    <a-scene renderer="colorManagement: true;">
+      <a-entity
+      position="-1 -0.17 0"
+      rotation = "0 45 0"
+      scale="15 15 15"
+      gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/CowNEWEdition_02_out/CowNEWEdition_02.gltf"
+      animation-mixer
+      shadow="cast:true; receive:true"
+    ></a-entity>
+  <a-entity
+    position="0 0.75 0"
+    rotation = "0 270 0"
+    scale="0.07 0.07 0.07"
+    gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift/All_text_green.gltf"
+    animation-mixer
+    shadow="cast:true; receive:true"
+  ></a-entity>
+  <a-entity
+    position="0 -0.03 0"
+    rotation = "0 270 0"
+    scale="11.5 11.5 11.5"
+    gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/picnicFarbric_out/picnicFarbric.gltf"
+    animation-mixer
+    shadow="cast:true; receive:true"
+></a-entity>
+<a-entity
+    position="0 0 0"
+    rotation = "0 270 0"
+    scale="11.5 11.5 11.5"
+    gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/picnicBasket_out/picnicBasket.gltf"
+    animation-mixer
+    shadow="cast:true; receive:true"
+></a-entity>
+<a-entity
+    position="0 0 0"
+    rotation = "0 270 0"
+    scale="11.5 11.5 11.5"
+    gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/apples_out/apples.gltf"
+    animation-mixer
+    shadow="cast:true; receive:true"
+></a-entity>
+<a-entity
+    position="0 0 0"
+    rotation = "0 270 0"
+    scale="11.5 11.5 11.5"
+    gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/banana_out/banana.gltf"
+    animation-mixer
+    shadow="cast:true; receive:true"
+></a-entity>
+<a-entity
+    position="0 0 0"
+    rotation = "0 270 0"
+    scale="11.5 11.5 11.5"
+    gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/cupcake_out/cupcake.gltf"
+    animation-mixer
+    shadow="cast:true; receive:true"
+></a-entity>
+<a-entity
+    position="0 0 0"
+    rotation = "0 270 0"
+    scale="11.5 11.5 11.5"
+    gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/sandwich_out/sandwich.gltf"
+    animation-mixer
+    shadow="cast:true; receive:true"
+></a-entity>
+<a-entity light="color: #e3e3e3; type: ambient" data-aframe-default-light="" aframe-injected=""></a-entity>
+<a-entity light="intensity: 0.6; castShadow: true; shadowBias: 0.2" position="-0.5 1 1" data-aframe-default-light="" aframe-injected="" visible=""></a-entity></a-scene>
+  </body>
+</html>
