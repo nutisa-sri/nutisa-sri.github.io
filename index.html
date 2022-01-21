@@ -1,115 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <meta charset="UTF-8">
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <!-- we import arjs version without NFT but with marker + location based support -->
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-  <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-<script>
-  AFRAME.registerComponent('markerhandler', {
-    init: function () {
-
-      this.el.sceneEl.addEventListener('markerFound', () => {
-        // redirect to custom URL e.g. google.com
-        let scene = document.querySelector('a-scene');
-
-        let model = document.createElement('a-entity');
-        //model.setAttribute('particle-system', 'color: #EF0000,#44CC00');
-        //model.setAttribute('position', '0 0 -10');
-
-        //scene.appendChild(model);
-
-      })
-
-      this.el.sceneEl.addEventListener('markerLost', () => {
-        // redirect to custom URL e.g. google.com
-        //let scene = document.querySelector('a-scene');
-        //scene.removeChild(scene.lastChild)
-
-      })
-    }
-  });
-</script>
-<style>
-  @font-face {
-  font-family: FCEkaluckRegular;
-  src: url(./assets/FCEkaluckRegular.ttf);
-}
-</style>
-<body style="margin : 0px; overflow: hidden;">
-  <div style="position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%);">
-    <b style="font-size:4vw; font-family: FCEkaluckRegular; color: white;">ส่องกับ QR Code</b>
-  </div>
-    <a-scene renderer="colorManagement: true;" embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-      <a-marker markerhandler type='barcode' value='21'>
-        <a-entity
-        position="-1 -0.17 0"
-        rotation = "0 45 0"
-        scale="13 13 13"
-        gltf-model="./assets/NY_Gift3/CowNEWEdition_02_out/CowNEWEdition_02.gltf"
-        animation-mixer
-        shadow="cast:true; receive:true"
-      ></a-entity>
-    <a-entity
-    position="-0.239 2.053 -0.716"
-    rotation = "-19.045 50.983 -1.458"
-    scale="4 4 4.376"
-      gltf-model="./assets/AgateText/color-embed.gltf"
-      animation-mixer
-      shadow="cast:true; receive:true"
-    ></a-entity>
-    <a-entity
-      position="0 -0.03 0"
-      rotation = "0 270 0"
-      scale="9.5 9.5 9.5"
-      gltf-model="./assets/NY_Gift3/picnicFarbric_out/picnicFarbric.gltf"
-      animation-mixer
-      shadow="cast:true; receive:true"
-  ></a-entity>
-  <a-entity
-      position="0 0 0"
-      rotation = "0 270 0"
-      scale="10 10 10"
-      gltf-model="./assets/NY_Gift3/picnicBasket_out/picnicBasket.gltf"
-      animation-mixer
-      shadow="cast:true; receive:true"
-  ></a-entity>
-  <a-entity
-      position="0 0 0"
-      rotation = "0 270 0"
-      scale="10 10 10"
-      gltf-model="./assets/NY_Gift3/apples_out/apples.gltf"
-      animation-mixer
-      shadow="cast:true; receive:true"
-  ></a-entity>
-  <a-entity
-      position="0 0 0"
-      rotation = "0 270 0"
-      scale="10 10 10"
-      gltf-model="./assets/NY_Gift3/banana_out/banana.gltf"
-      animation-mixer
-      shadow="cast:true; receive:true"
-  ></a-entity>
-  <a-entity
-      position="0 0 0"
-      rotation = "0 270 0"
-      scale="10 10 10"
-      gltf-model="./assets/NY_Gift3/cupcake_out/cupcake.gltf"
-      animation-mixer
-      shadow="cast:true; receive:true"
-  ></a-entity>
-  <a-entity
-      position="0 0 0"
-      rotation = "0 270 0"
-      scale="10 10 10"
-      gltf-model="./assets/NY_Gift3/sandwich_out/sandwich.gltf"
-      animation-mixer
-      shadow="cast:true; receive:true"
-  ></a-entity>
-  <a-entity light="color: #e3e3e3; type: ambient" data-aframe-default-light="" aframe-injected=""></a-entity>
-  <a-entity light="intensity: 0.6; castShadow: true; shadowBias: 0.2" position="-0.5 1 1" data-aframe-default-light="" aframe-injected="" visible=""></a-entity>      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | SET - Stock game [WebGL v.2018]</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGLTest.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">SET - Stock game [WebGL v.2018]</div>
+      </div>
+    </div>
   </body>
 </html>

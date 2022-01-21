@@ -1,0 +1,222 @@
+{
+	"language": "th",
+	"items": 
+	[
+		{
+			"key": "btn_next",
+			"value": "ถัดไป"
+		},
+		{
+			"key": "btn_back",
+			"value": "ก่อนหน้า"
+		},
+		{
+			"key": "btn_home",
+			"value": "หน้าหลัก"
+		},
+		{
+			"key": "btn_ok",
+			"value": "ตกลง"
+		},
+		{
+			"key": "btn_play",
+			"value": "เล่น"
+		},
+		{
+			"key": "btn_replay",
+			"value": "เล่นอีกครั้ง"
+		},
+		{
+			"key": "lb_avatar_topic",
+			"value": "เลือก AVATAR"
+		},
+		{
+			"key": "lb_tutorial_topic",
+			"value": "คำแนะนำ"
+		},
+		{
+			"key": "lb_tutorial_mission",
+			"value": "ภารกิจ"
+		},
+		{
+			"key": "lb_tutorial_page1_desc",
+			"value": "เลือกลงทุนในกิจการที่เติบโตแต่ละสถานการณ์\nเพื่อเพิ่มโอกาสได้ผลตอบแทนดี ๆ"
+		},
+		{
+			"key": "lb_tutorial_page2_desc",
+			"value": "ผู้เล่นจะได้รับเงินลงทุน 200,000 บาท\nใช้เลือกซื้อกิจการจาก 9 กิจการ\nมูลค่ากิจการละ 50,000 บาท"
+		},
+		{
+			"key": "lb_tutorial_page3_desc",
+			"value": "ระหว่างเกมเมื่อมีสถานการณ์ปรากฏขึ้น\nซึ่งเป็นผลดีต่อบางกิจการ\nต้องตัดสินใจว่าจะเลือกซื้อหรือขายกิจการใด"
+		},
+		{
+			"key": "lb_tutorial_page4_desc",
+			"value": "ระหว่างเกมเมื่อมีสถานการณ์ปรากฏขึ้น\nซึ่งเป็นผลลบต่อบางกิจการ\nต้องตัดสินใจว่าจะเลือกซื้อหรือขายกิจการใด"
+		},
+		{
+			"key": "lb_tutorial_page5_desc_1",
+			"value": "ระวัง Money Monsters"
+		},
+		{
+			"key": "lb_tutorial_page5_desc_2",
+			"value": "ตัวทำลายฝันทางการเงินของทุกคน"
+		},
+		{
+			"key": "lb_tutorial_page6_desc",
+			"value": "พร้อมแล้ว\nเริ่มเลย!"
+		},
+		{
+			"key": "lb_property_restaurant",
+			"value": "ร้านอาหาร"
+		},
+		{
+			"key": "lb_property_electricCar",
+			"value": "บริษัทรถยนต์ไฟฟ้า"
+		},
+		{
+			"key": "lb_property_retail",
+			"value": "ร้านค้าปลีก"
+		},
+		{
+			"key": "lb_property_hospital",
+			"value": "โรงพยาบาล"
+		},
+		{
+			"key": "lb_property_ICT",
+			"value": "บริษัทไอทีและสื่อสาร"
+		},
+		{
+			"key": "lb_property_hotel",
+			"value": "โรงแรม"
+		},
+		{
+			"key": "lb_property_realEstate",
+			"value": "บริษัทอสังหาริมทรัพย์"
+		},
+		{
+			"key": "lb_property_solarFarm",
+			"value": "โซลาร์ฟาร์ม"
+		},
+		{
+			"key": "lb_property_Bank",
+			"value": "ธนาคาร"
+		},
+		{
+			"key": "info_round",
+			"value": "รอบ"
+		},
+		{
+			"key": "lb_info_event",
+			"value": "สถานการณ์:"
+		},
+		{
+			"key": "lb_info_investment",
+			"value": "เงินลงทุน"
+		},
+		{
+			"key": "lb_info_cash",
+			"value": "เงินสด"
+		},
+		{
+			"key": "lb_info_divident",
+			"value": "เงินปันผล"
+		},
+		{
+			"key": "lb_info_profit",
+			"value": "กำไร / ขาดทุน"
+		},
+		{
+			"key": "lb_info_total",
+			"value": "มูลค่าพอร์ตลงทุน"
+		},
+		{
+			"key": "lb_info_ROI%",
+			"value": "อัตราผลตอบแทนรวม (%)"
+		},
+		{
+			"key": "lb_info_baht",
+			"value": "บาท"
+		},
+		{
+			"key": "lb_event_topic_1",
+			"value": "เกิดโรคระบาด"
+		},
+		{
+			"key": "lb_event_topic_2",
+			"value": "ความขัดแย้ง\nระหว่างประเทศ"
+		},
+		{
+			"key": "lb_event_topic_3",
+			"value": "ท่องเที่ยวบูม"
+		},
+		{
+			"key": "lb_event_topic_4",
+			"value": "เจ้าภาพจัดแข่งกีฬา\nระหว่างประเทศ"
+		},
+		{
+			"key": "lb_event_topic_5",
+			"value": "ภัยพิบัติทางธรรมชาติ"
+		},
+		{
+			"key": "lb_event_topic_6",
+			"value": "สร้างรถไฟความเร็วสูง\nทั่วประเทศ"
+		},
+		{
+			"key": "lb_event_topic_7",
+			"value": "อัตราเงินเฟ้อ 10%"
+		},
+		{
+			"key": "lb_event_topic_8",
+			"value": "อัตราดอกเบี้ยลดลง"
+		},
+		{
+			"key": "lb_event_topic_9",
+			"value": "เงินบาทอ่อนค่า"
+		},
+		{
+			"key": "lb_event_topic_10",
+			"value": "รัฐบาลเก็บ\nภาษีสิ่งแวดล้อม"
+		},
+		{
+			"key": "lb_event_topic_11",
+			"value": "เงินบาทแข็งค่า"
+		},
+		{
+			"key": "lb_event_topic_12",
+			"value": "Digital Disruption"
+		},
+		{
+			"key": "lb_summary_topic",
+			"value": "อัตราผลตอบแทนเฉลี่ย\nจากการลงทุนในหุ้นของกิจการ"
+		},
+		{
+			"key": "lb_event_7_desc_1",
+			"value": "100 บาท"
+		},
+		{
+			"key": "lb_event_7_desc_2",
+			"value": "ปี 2550"
+		},
+		{
+			"key": "lb_event_7_desc_3",
+			"value": "ปี 2560"
+		},
+		{
+			"key": "lb_event_7_desc_4",
+			"value": "ปี 2570"
+		},
+		{
+			"key": "lb_popup_cannotBuy",
+			"value": "เงินไม่เพียงพอ"
+		},
+		{
+			"key": "lb_buy",
+			"value": "ซื้อ"
+		},
+		{
+			"key": "lb_sell",
+			"value": "ขาย"
+		}
+	]
+}
