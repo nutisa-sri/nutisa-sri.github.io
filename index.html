@@ -2,39 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>GeoAR.js demo2</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <title>Test AR Core</title>
   </head>
 
   <body style="margin: 0; overflow: hidden;">
-    <a-scene
-      vr-mode-ui="enabled: false"
-      embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
-    >
-      <a-text
-        value="TEXT"
-        scale="15 15 15"
-        look-at="[gps-camera]"
-        gps-entity-place="latitude: 13.6592283; longitude: 100.4681128;"
-      ></a-text>
-      <a-entity
-        scale="6 6 6"
-        gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/NY_Gift3/CowNEWEdition_02_out/CowNEWEdition_02.gltf"
-        animation-mixer
-        shadow="cast:true; receive:true"
-      ></a-entity>
-      <a-entity
-        scale="1 1 1"
-        gltf-model="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/duckTest/test22222.gltf"
-        animation-mixer
-        shadow="cast:true; receive:true"
-      ></a-entity>
-      <a-camera gps-camera="maxDistance: 3;" rotation-reader></a-camera>
-
-    </a-scene>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <model-viewer ar src="https://cdn.glitch.com/162a6be2-293d-4554-8610-6011a9f71fef%2FChairExp.glb?1557485499409" 
+    auto-rotate camera-controls alt="Chair" background-color="#455A64"></model-viewer>
+    <model-viewer ar src="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/duckTest/test22222.gltf" 
+    auto-rotate camera-controls alt="Duck" background-color="#455A64"></model-viewer>
   </body>
 </html>
