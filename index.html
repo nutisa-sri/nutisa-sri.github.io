@@ -1,16 +1,22 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Test AR Core ja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
   </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/image-tracking/assets/card-example/card.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/image-tracking/assets/card-example/card.png" />
+        <a-asset-item id="avatarModel2" src="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/duckTest/test22222.gltf"></a-asset-item>
+      </a-assets>
 
-  <body style="margin: 0; overflow: hidden;">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <model-viewer ar src="https://cdn.glitch.com/162a6be2-293d-4554-8610-6011a9f71fef%2FChairExp.glb?1557485499409" 
-    auto-rotate camera-controls alt="Chair" background-color="#455A64"></model-viewer>
-    <model-viewer ar autoplay src="https://raw.githubusercontent.com/nutisa-sri/nutisa-sri.github.io/master/assets/duckTest/test22222.gltf" 
-    auto-rotate camera-controls alt="Duck" background-color="#455A64"></model-viewer>
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel2" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+      </a-entity>
+    </a-scene>
   </body>
 </html>
